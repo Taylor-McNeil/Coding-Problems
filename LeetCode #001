@@ -6,6 +6,7 @@ You may assume that each input would have exactly one solution, and you may not 
 
 My Solution:
 
+```java
 class Solution {
 
     public int[] twoSum(int[] nums, int target) {
@@ -19,3 +20,4 @@ class Solution {
         }
     throw new IllegalArgumentException("No Solution");}
 }
+```
