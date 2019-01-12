@@ -1,4 +1,8 @@
-    public int reverse(int x) {
+/*
+Given a 32-bit signed integer, reverse digits of an integer.
+*/
+
+public int reverse(int x) {
         long reverse = 0;
         
         while(x!=0){
