@@ -4,6 +4,7 @@ Note in this situation -121 backward is 121- and that is not a palindrome.
 */
 
 public boolean isPalindrome(int x) {
+        
         String number = Integer.toString(x);
         int length = number.length();
         
@@ -17,3 +18,17 @@ public boolean isPalindrome(int x) {
          
         return false;
     }
+
+//Alternative Solution 
+
+ public boolean isPalindrome(int x) {
+        
+        String number = Integer.toString(x);
+        StringBuilder sb = new StringBuilder(number);
+        sb.reverse();
+        String reversed = sb.toString();
+        
+        if(number.equals(reversed)) return true;
+        
+        return false;
+}
